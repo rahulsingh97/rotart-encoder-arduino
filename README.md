@@ -2,7 +2,7 @@
 rotart encoder made simple
 
 pins
-```
+```c
  #define outputA 21
  #define outputB 19
  ```

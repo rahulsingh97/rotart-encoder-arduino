@@ -7,13 +7,13 @@ pins
  #define outputB 19
  ```
  variable to remember state
- ```
+ ```c
  int counter = 0; 
  int aState;
  int aLastState;  
  ```
  opening serial port at 9600 baud rate
- ```
+ ```c
  void setup() { 
    pinMode (outputA,INPUT);
    pinMode (outputB,INPUT);
@@ -22,7 +22,7 @@ pins
  } 
  ```
  get data and print
- ```
+ ```c
  void loop() { 
    aState = digitalRead(outputA); 
    if (aState != aLastState){     
@@ -38,7 +38,7 @@ pins
  ```
  here the counter increases by 10 enery time along with a random value 
  to disable this randon value remove `+ random(2,6)`
- ```
+ ```c
  counter = (counter + 10 + random(2,6));}
  ```
  
